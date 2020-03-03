@@ -63,7 +63,7 @@ export default {
 
     .img {
       position: absolute;
-      bottom: 75px;
+      bottom: 71px;
       right: 16px;
       z-index: 2
     }

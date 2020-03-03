@@ -29,29 +29,29 @@ login.vue 登录页
 ## 项目特性总结：
 
 1. 精简字体图表
-  - 默认图标 860个，只选择 ios全部图标，logo部分图标
-  - 其他没有的用 svg 代替
+    - 默认图标 860个，只选择 ios全部图标，logo部分图标
+    - 其他没有的用 svg 代替
     - https://ionicons.com/v4
     - https://github.com/ionic-team/ionicons/tree/4.x/src/svg
     - https://www.toicon.com/series/feather
 
 2. SvgIcon 定制渲染图标
-  - `<SvgIcon icon="outdent"/>`
-  - 缺点：全部加载
-  - https://blog.csdn.net/caseywei/article/details/89328551
+    - `<SvgIcon icon="outdent"/>`
+    - 缺点：全部加载
+    - https://blog.csdn.net/caseywei/article/details/89328551
 
 3. gulp 重新编译 less 文件，趋于扁平化风格
 
 4. Menu 菜单
-  - 展开用的是 Menu组件
-  - 收起隐藏 Menu组件，用的 Dropdown
-  - 渲染的时候要判断菜单展开，还是隐藏，渲染不同的菜单
+    - 展开用的是 Menu组件
+    - 收起隐藏 Menu组件，用的 Dropdown
+    - 渲染的时候要判断菜单展开，还是隐藏，渲染不同的菜单
 
 5. 封装组件库，面向数据编程，数据驱动响应页面
-  1. Echarts
-  2. Countup.js
-  3. FormGroup.vue
-  4. TableEdit.vue
+    1. Echarts
+    2. Countup.js
+    3. FormGroup.vue
+    4. TableEdit.vue
 
 
 ## 启动项目
@@ -86,8 +86,8 @@ npm test
 2. 线上环境 npm run build--prod
 3. 测试环境 npm run build--test
 4. 预发环境 npm run build--dev
-  - https://www.cnblogs.com/1156063074hp/p/12028846.html
-  - http://www.manongjc.com/detail/14-mnbotkyoymcxcnb.html
+    - https://www.cnblogs.com/1156063074hp/p/12028846.html
+    - http://www.manongjc.com/detail/14-mnbotkyoymcxcnb.html
 
 5. `cross-env` 环境变量管理
 
@@ -96,7 +96,7 @@ npm test
 1. [vue-cli 脚手架配置](http://vuejs-templates.github.io/webpack/)
 2. [vue-loader 配置项](http://vuejs.github.io/vue-loader)
 3. 新增 loader
-  - `sass-resources-loader` 全局引入 scss变量
+    - `sass-resources-loader` 全局引入 scss变量
 
 
 ## mousewheel 事件
@@ -109,7 +109,7 @@ npm test
 ## Eslint 规范
 
 1. `Parsing error: x-invalid-end-tag  vue/no-parsing-error`
-  - https://github.com/iview/iview/issues/2828
+    - https://github.com/iview/iview/issues/2828
 
 ```jsx
 // .eslintrc.js 的 rules 加上
