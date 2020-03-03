@@ -32,7 +32,7 @@
       trigger="click"
       :class="$style.more">
       <Button type="success" :class="$style.inner">
-        选项 {{index}}<Icon type="arrow-down"/>
+        选项 <Icon type="arrow-down"/>
       </Button>
       <DropdownMenu slot="list">
         <template v-for="({ name, icon }) of menu">

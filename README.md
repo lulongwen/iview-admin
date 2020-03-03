@@ -1,6 +1,29 @@
-# iview-admin-template
+# vue-admin 中后台 UI框架
+1. iview-admin-template
+2. 脚手架 `vue-cli2.9` & `webpack3.6`
+3. 基础工具链
+	- vue 2.6+
+	- vue-router 3.1+
+	- vuex 3.1+
+	- view-design 4+
+	- axios
+	- echart
+	- countup.js
+	- lodash
 
-> iview-admin-template
+4. vue-admin 基于 iview-amdin 开发
+
+5. [联系卢珑文](https://lulongwen.com)
+
+![联系卢珑文](static/assets/images/wechat.jpg)
+
+
+## 首页预览
+
+![home 首页](static/ui/home.jpg)
+
+![login 登录页](static/ui/login.jpg)
+
 
 ## Build Setup
 
