@@ -1,0 +1,57 @@
+.error {
+  width: 580px;
+  margin: 5em auto 0;
+  text-align: right;
+
+  .header {
+    font-size: 220px;
+    font-weight: 600;
+    color: #2d8cf0;
+  }
+
+  i {
+    position: absolute;
+    font-size: 120px;
+  }
+  .icon, .icon403 {
+    display: inline-block;
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 20px solid #ed3f14;
+    color: #ed3f14;
+  }
+
+  .icon {
+    &:first-child {
+      margin-left: 50px
+    }
+    i {
+      bottom: -10px;
+      left: 0;
+      transform-origin: center bottom;
+      animation: wabble 3s ease 0s infinite alternate;
+    }
+  }
+
+  .icon403 {
+    margin: 0 50px;
+    transform-origin: center bottom;
+    animation: rock 2.8s ease 0s infinite;
+    i{
+      bottom: -15px;
+      left: 0
+    }
+  }
+
+  h1 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 800
+  }
+  p {
+    line-height: 36px
+  }
+}

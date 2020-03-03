@@ -1,0 +1,27 @@
+.gutter {
+  height: 50px;
+  line-height: 45px;
+  padding: 5px;
+  transition: background-color .2s linear, color .3s ease-in;
+
+  &:hover {
+    cursor: pointer;
+    color: #2b85e4;
+    background-color: #f5f7f9
+  }
+
+  .ivu-badge-count {
+    top: -6px;
+    right: 7px
+  }
+}
+
+.header-search {
+  width: 280px;
+  top: -2px;
+  padding-right: 5px;
+
+  .ivu-input {
+    border-radius: 32px
+  }
+}

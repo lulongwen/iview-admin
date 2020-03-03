@@ -1,0 +1,51 @@
+@card-prefix-cls: ~"@{css-prefix}card";
+
+.@{card-prefix-cls} when (@border-radius-small > 0) {
+    border-radius: @border-radius-small;
+}
+
+.@{card-prefix-cls}{
+    position: relative;
+    background: @white;
+    transition: all @transition-time @ease-in-out;
+
+    &-bordered {
+        border: 1px solid @white;
+        border-color: @border-color-split;
+    }
+
+    &-shadow{
+        box-shadow: @shadow-card;
+    }
+
+    &:hover {
+        box-shadow: @shadow-base;
+        border-color: #eee;
+    }
+    &&-dis-hover:hover{
+        box-shadow: none;
+        border-color: transparent;
+    }
+
+    &&-dis-hover&-bordered:hover{
+        border-color: @border-color-split;
+    }
+
+    &&-shadow:hover{
+        box-shadow: @shadow-card;
+    }
+
+    &-head {
+        .content-header;
+    }
+
+    &-extra {
+        position: absolute;
+        right: 16px;
+        top: 14px;
+    }
+
+    &-body {
+        padding: 16px;
+    }
+}

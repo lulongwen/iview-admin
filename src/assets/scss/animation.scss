@@ -1,0 +1,156 @@
+// rotate icon
+.rotate-icon {
+  cursor: pointer;
+  transition: transform .3s linear;
+  transform-origin: center;
+  transform: rotate3d(0, 0, 1, 180deg);
+
+  &.rotate {
+    transform: rotate3d(0, 0, 1, 0deg)
+  }
+}
+
+// loading
+.loading {
+  animation: icon-spin 1s linear infinite
+}
+@keyframes icon-spin {
+  from { transform: rotate(0deg)}
+  50%  { transform: rotate(180deg)}
+  to   { transform: rotate(360deg)}
+}
+
+// lockScreen
+.lock-screen {
+  transition: all 2s linear;
+  z-index: 99;
+  box-shadow: 0 0 0 30px #4d5669 inset;
+}
+
+
+//error403
+@keyframes rock {
+  0% {
+    transform: rotateZ(0deg)
+  }
+  40% {
+    transform: rotateZ(-20deg)
+  }
+  45% {
+    transform: rotateZ(-15deg)
+  }
+  50% {
+    transform: rotateZ(-20deg)
+  }
+  55% {
+    transform: rotateZ(-15deg)
+  }
+  60% {
+    transform: rotateZ(-20deg)
+  }
+  100% {
+    transform: rotateZ(0deg)
+  }
+}
+
+// error500
+@keyframes wabble {
+  0% {
+    transform: rotateZ(0deg)
+  }
+  20% {
+    transform: rotateZ(-10deg)
+  }
+  40% {
+    transform: rotateZ(5deg)
+  }
+  60% {
+    transform: rotateZ(-5deg)
+  }
+  80% {
+    transform: rotateZ(10deg)
+  }
+  100% {
+    transform: rotateZ(0deg)
+  }
+}
+
+// error 404
+@keyframes slideUp {
+  0% {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes cloudLeft {
+  0% {
+    top: 17px;
+    left: 220px;
+    opacity: 0;
+  }
+  20% {
+    top: 33px;
+    left: 188px;
+    opacity: 1;
+  }
+  80% {
+    top: 81px;
+    left: 92px;
+    opacity: 1;
+  }
+  100% {
+    top: 97px;
+    left: 60px;
+    opacity: 0;
+  }
+}
+@keyframes cloudMid {
+  0% {
+    top: 10px;
+    left: 420px;
+    opacity: 0;
+  }
+  20% {
+    top: 40px;
+    left: 360px;
+    opacity: 1;
+  }
+  70% {
+    top: 130px;
+    left: 180px;
+    opacity: 1;
+  }
+  100% {
+    top: 160px;
+    left: 120px;
+    opacity: 0;
+  }
+}
+
+@keyframes cloudRight {
+  0% {
+    top: 100px;
+    left: 500px;
+    opacity: 0;
+  }
+  20% {
+    top: 120px;
+    left: 460px;
+    opacity: 1;
+  }
+  80% {
+    top: 180px;
+    left: 340px;
+    opacity: 1;
+  }
+  100% {
+    top: 200px;
+    left: 300px;
+    opacity: 0;
+  }
+}

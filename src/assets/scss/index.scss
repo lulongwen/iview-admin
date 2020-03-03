@@ -1,0 +1,90 @@
+html, body, .root, .home {
+  height: 100%;
+}
+.root {
+  overflow: hidden
+}
+[v-cloak]{
+  display: none
+}
+.full {
+  width: 100%
+}
+.bg-white {
+  background-color: #fff;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.gutter20 {
+  margin: 20px 0;
+}
+
+// login.vue
+.login {
+  height: 100%;
+  background: url('/static/assets/images/login.jpg') center no-repeat;
+  background-size: cover;
+}
+
+// lock.vue
+.locking {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 #667aa6 inset;
+  transform: translate(-50%, -50%);
+  transition: all 1s linear
+}
+
+
+// Menu.vue
+.logo-mini {
+  padding: 12px 12px 0
+}
+.flex-item {
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(54, 62, 79, 0.25);
+  font-size: 12px;
+  text-align: center;
+  color: rgba(255, 255, 255, .7);
+  cursor: pointer;
+  transition: background-color .2s linear;
+
+  &:hover {
+    background-color: #363e4f;
+    color: rgba(255, 255, 255, .9)
+  }
+  &.active {
+    background-color: #2d8cf0;
+    color: #fff
+  }
+  .title {
+    margin-top: 4px
+  }
+}
+// 递归三级菜单不继承 .flex-item
+.ivu-dropdown.first {
+  width: 100%;
+  padding: 8px 12px;
+  cursor: pointer;
+
+  .title {
+    display: inline
+  }
+}
+
+@import './variables.scss';
+@import './header.scss';
+@import './mixins.scss';
+@import './animation.scss';
+@import './error.scss';
+
+.success {
+  color: $success
+}
+.error {
+  color: $error
+}
